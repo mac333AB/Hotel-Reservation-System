@@ -1,10 +1,11 @@
-#🏨 Hotel Reservation System
+ # 🏨 Hotel Reservation System
 
 A Java-based Hotel Reservation System where customers can explore available rooms, create an account, and manage their reservations. Admins have complete control over rooms, customers, and reservations. The system is designed with OOP principles and robust exception handling to ensure smooth execution without crashes.
 
 
-##✨ Features
-###👤 Customer
+## ✨ Features
+
+###  👤 Customer
 
 🔍 Find Rooms – Search rooms by type or availability.
 
@@ -24,7 +25,7 @@ A Java-based Hotel Reservation System where customers can explore available room
 
 📝 View All Reservations – Monitor all bookings in the system.
 
-###🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 Language: Java
 
@@ -35,7 +36,7 @@ Data Storage: In-memory using collections (easily extendable to databases)
 Version Control: Git & GitHub
 
 
-##🚀 How to Run
+## 🚀 How to Run
 
 Clone the repository:
 
@@ -47,7 +48,7 @@ Open the project in an IDE (IntelliJ, Eclipse, or VS Code).
 Compile and run the HotelReservationApp class to start the system.
 
 
-##📌 Future Enhancements
+## 📌 Future Enhancements
 
 Integrate with a relational database (MySQL/PostgreSQL).
 
@@ -58,7 +59,7 @@ Role-based login (separate Admin & Customer portals).
 Advanced search & filtering options.
 
 
-##📖 Learning Highlights
+## 📖 Learning Highlights
 
 This project strengthened my skills in:
 
