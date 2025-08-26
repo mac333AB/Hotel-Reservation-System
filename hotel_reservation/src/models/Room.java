@@ -2,9 +2,9 @@ package models;
 
 public class Room implements IRoom {
 	
-	protected String roomNumber;
-	protected double price;
-	protected  RoomType enumeration;
+	private String roomNumber;
+	private double price;
+	private  RoomType enumeration;
 	
 	@Override
 	public String toString() {
@@ -44,3 +44,4 @@ public class Room implements IRoom {
 	
 
 }
+
