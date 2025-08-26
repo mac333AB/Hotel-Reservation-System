@@ -77,13 +77,36 @@ public class MainMenu {
 						System.out.println(e.getMessage() + "\nInvalid date format or value. Please enter date in dd/mm/yyyy format.\n");
 			            continue;
 			        }
-			        
+			        System.out.println("\n--------------------------------------Available Rooms----------------------------------------\n");
+			        List<IRoom> availableRooms;
+			        try {
+			        availableRooms= new ArrayList<>(hotelResource.findARoom(checkInDate,checkOutDate));
+			        for(IRoom room: availableRooms) {
+			        	System.out.println(room);
+			        }
+			       }
+			       catch(Exception e) {
+						System.out.println(e.getMessage() + "\n");
+						continue;
+			       }
                 	 System.out.println("Enter the room number you want to book :\n");
                 	 String roomNumber=input.nextLine();
                 	 if(roomNumber.isEmpty()) {
                 		 System.out.println("Room number cannot be empty. Returning to Main Menu.\n");
                 		 continue;
                 	 }
+                	 boolean roomExists=false;
+                	 for(IRoom room: availableRooms) {
+							if (room.getRoomNumber().equals(roomNumber)) {
+								roomExists = true;
+								break;
+							}
+ 			        }
+					if (!roomExists) {
+						System.out.println(
+								"The room number you entered is not available. Please select a room from the available rooms list.\n");
+						continue;
+					}
                 	 try {
                 		 IRoom room=hotelResource.getRoom(roomNumber);
                 		 Reservation reservation= hotelResource.bookARoom(userEmail, room, checkInDate, checkOutDate);
