@@ -7,6 +7,7 @@ public class AdminResource {
 	public static CustomerService customerService = CustomerService.getInstance();
 	public static ReservationService reservationService = ReservationService.getInstance();
 
+	
 	public Customer getcustomer(String email) {
 		
 		return customerService.getCustomer(email);

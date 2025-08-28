@@ -63,6 +63,7 @@ public class HotelResource {
 	}
 	
 	
+	
 	public Collection<IRoom> findARoom(Date checkIn, Date checkOut){
 		if (checkIn == null || checkOut == null) {
 			throw new IllegalArgumentException("Check-in and Check-out dates cannot be null.");

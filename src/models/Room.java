@@ -14,6 +14,7 @@ public class Room implements IRoom {
 		
 	}
 	
+	
 	public Room(String roomNumber, RoomType enumeration, double price) {
 	    this.roomNumber = roomNumber;
 	    this.enumeration = enumeration;

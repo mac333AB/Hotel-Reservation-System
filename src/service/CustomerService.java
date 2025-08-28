@@ -21,6 +21,7 @@ public class CustomerService {
 	
 	
 	
+	
 	public void addCustomer(String email, String firstname, String lastName) {
 		
 		if (customers.containsKey(email)) {
