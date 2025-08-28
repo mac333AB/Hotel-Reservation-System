@@ -9,9 +9,9 @@ public class FreeRoom extends Room {
 	
 	@Override
 	public String toString(){
-		return  "Room { \n Room Number= "+ super.roomNumber+ 
-				"\n Price= "+ price+ 
-				"\n RoomType= "+enumeration+"\n}";
+		return  "Room { \n Room Number= "+ getRoomNumber()+ 
+				"\n Price= "+ getRoomPrice()+ 
+				"\n RoomType= "+getRoomType()+"\n}";
 		
 	}
 	
